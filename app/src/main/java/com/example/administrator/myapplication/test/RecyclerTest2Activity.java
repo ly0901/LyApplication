@@ -34,6 +34,7 @@ public class RecyclerTest2Activity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_test);
         ButterKnife.inject(this);
+
         init();
         initData();
         initLister();
