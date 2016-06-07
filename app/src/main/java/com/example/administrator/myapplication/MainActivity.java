@@ -9,7 +9,7 @@ import com.example.administrator.myapplication.net.AsyncHandler;
 import com.example.administrator.myapplication.net.AsyncNet;
 import com.example.administrator.myapplication.net.BaseRequest;
 import com.example.administrator.myapplication.net.BaseResponse;
-import com.example.administrator.myapplication.test.RecyclerTest2Activity;
+import com.example.administrator.myapplication.test.ChioceCityActivity;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -32,7 +32,7 @@ public class MainActivity extends BaseActivity {
         Map<String, String> params = new HashMap<String, String>();
         params.put("whgcsPhone", userName);
         params.put("password", userPassword);
-        startNewActivity(RecyclerTest2Activity.class);
+        startNewActivity(ChioceCityActivity.class);
     }
 
     private void loadDatas() {

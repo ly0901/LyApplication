@@ -1,9 +1,13 @@
 package com.example.administrator.myapplication.test;
 
+import android.app.Dialog;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.administrator.myapplication.R;
@@ -35,9 +39,10 @@ public class RecyclerTest2Activity extends BaseActivity {
         setContentView(R.layout.activity_recycler_test);
         ButterKnife.inject(this);
 
-        init();
-        initData();
-        initLister();
+//        init();
+//        initData();
+//        initLister();
+        choicePoliceStation();
     }
 
 
@@ -70,8 +75,22 @@ public class RecyclerTest2Activity extends BaseActivity {
         initMockData(25);
     }
     private void initLister() {
-    }
 
+    }
+    private void choicePoliceStation() {
+        LayoutInflater inflaterDl = LayoutInflater.from(this);
+        RelativeLayout layout = (RelativeLayout)inflaterDl.inflate(R.layout.popup_top_right, null );
+        final Dialog dialog = new AlertDialog.Builder(RecyclerTest2Activity.this).create();
+        dialog.show();
+//        dialog.getWindow().setContentView(layout);
+//        Dialog mDialog = new Dialog(getApplicationContext());
+//        mDialog.setContentView(R.layout.popup_top_right);
+//        mDialog.setCanceledOnTouchOutside(true);
+//        // mDialog.getWindow().setGravity(Gravity.BOTTOM);
+//        // 赋值的位置是有影响的
+//        mDialog.getWindow().getAttributes().width = ViewGroup.LayoutParams.MATCH_PARENT;
+//        mDialog.show();
+    }
     private void loadMore() {
         isLoading = true;
         handler.postDelayed(new Runnable() {
