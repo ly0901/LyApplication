@@ -26,6 +26,6 @@ public class ChioceCityActivity extends BaseActivity {
 
     @OnClick(R.id.tv_chioce)
     public void setTvChioce(){
-        AddressComponent.getInstance(mContext, null, null, null, tvShow).show("", "", "");
+        AddressComponent.getInstance(mContext, null, null, null, tvShow).show();
     }
 }

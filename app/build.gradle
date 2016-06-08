@@ -33,5 +33,6 @@ dependencies {
     compile 'com.orhanobut:logger:1.4'
     compile 'com.jakewharton:butterknife:6.1.0'
     compile 'com.android.support:recyclerview-v7:23.1.0'
-     compile 'com.github.captain-miao:recyclerviewutils:1.2.1'
+    compile 'com.github.captain-miao:recyclerviewutils:1.2.1'
+
 }
