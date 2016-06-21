@@ -2,14 +2,9 @@ package com.example.administrator.myapplication;
 
 import android.os.Bundle;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.administrator.myapplication.base.BaseActivity;
-import com.example.administrator.myapplication.net.AsyncHandler;
-import com.example.administrator.myapplication.net.AsyncNet;
-import com.example.administrator.myapplication.net.BaseRequest;
-import com.example.administrator.myapplication.net.BaseResponse;
-import com.example.administrator.myapplication.test.ChioceCityActivity;
+import com.example.administrator.myapplication.heartlayout.widget.TestHeartActivity;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -32,25 +27,9 @@ public class MainActivity extends BaseActivity {
         Map<String, String> params = new HashMap<String, String>();
         params.put("whgcsPhone", userName);
         params.put("password", userPassword);
-        startNewActivity(ChioceCityActivity.class);
+        startNewActivity(TestHeartActivity.class);
     }
 
     private void loadDatas() {
-        BaseRequest baseRequest = new BaseRequest();
-
-        AsyncNet.get("http://app.xinyihezi.com:8888/homepage/?search_type=3", new AsyncHandler(mActivity) {
-            @Override
-            public void afterSuccess(BaseResponse result) {
-                String string = result.errmsg + result.status;
-                Toast.makeText(getApplicationContext(), string, Toast.LENGTH_SHORT).show();
-
-            }
-
-            @Override
-            public void afterFailure() {
-                Toast.makeText(getApplicationContext(), "请求失败", Toast.LENGTH_SHORT).show();
-                super.afterFailure();
-            }
-        });
     }
 }

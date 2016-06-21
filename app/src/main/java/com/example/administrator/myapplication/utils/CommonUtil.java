@@ -31,7 +31,6 @@ import android.text.style.AbsoluteSizeSpan;
 import android.text.style.CharacterStyle;
 import android.text.style.ForegroundColorSpan;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,13 +41,9 @@ import android.widget.Toast;
 
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.base.MyApplication;
-import com.orhanobut.logger.Logger;
-
-import org.apache.http.Header;
 
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.net.URI;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
@@ -571,60 +566,60 @@ public class CommonUtil {
 //    }
 
 
-    public static void printSuccessLog(String TAG, Header[] headers, URI uri, String requestParams,
-                                       int statusCode, String responseBody, boolean isSuccess) {
-        //        if (headers != null) {
-        //            String headerStr = "";
-        //            for (int i = 0; i < headers.length; i++) {
-        //                Logger.d(headerStr + i + ": " + headers[i]);
-        //            }
-        //        }
-
-//        if (!ConstantUrl.isPrint) {
-//            return;
+//    public static void printSuccessLog(String TAG, Header[] headers, URI uri, String requestParams,
+//                                       int statusCode, String responseBody, boolean isSuccess) {
+//        //        if (headers != null) {
+//        //            String headerStr = "";
+//        //            for (int i = 0; i < headers.length; i++) {
+//        //                Logger.d(headerStr + i + ": " + headers[i]);
+//        //            }
+//        //        }
+//
+////        if (!ConstantUrl.isPrint) {
+////            return;
+////        }
+//
+//        try {
+//
+//            String url = uri.toString();//"http://" + uri.getHost() + uri.getPath() + "?" + uri.getQuery();
+//            if (isSuccess) {
+//                Log.w(TAG, "            请求成功");
+//            } else {
+//                Log.w(TAG, "            请求失败");
+//            }
+//            requestParams = requestParams == null ? "" : requestParams;
+//            if (isJsonFormat) {
+//                if (!TextUtils.isEmpty(requestParams)) {
+//                    Logger.w(TAG, "请求\n\nURL：" + url + "\n返回码：" + statusCode);
+//                    Logger.json(TAG, requestParams);
+//                } else {
+//                    Logger.w(TAG, "请求" + "\n\n无请求参数" + "\nURL：" + url + "\n返回码：" + statusCode);
+//                }
+//
+//                Logger.w(TAG, "返值 ");
+//                Logger.json(TAG, responseBody);
+//
+//            } else {
+//                if (!TextUtils.isEmpty(requestParams)) {
+//                    Logger.w(TAG, "请求\n\nURL：" + url + "\n返回码：" + statusCode + "\n\n参数" + requestParams);
+//                } else {
+//                    Logger.w(TAG, "请求\n\nURL：" + url + "\n返回码：" + statusCode);
+//                }
+//                Logger.d(TAG, "返值\n\n" + responseBody);
+//            }
+//        } catch (Exception e) {
+//            Logger.e(TAG, "         日志错误啦");
+//            e.printStackTrace();
 //        }
+//    }
 
-        try {
-
-            String url = uri.toString();//"http://" + uri.getHost() + uri.getPath() + "?" + uri.getQuery();
-            if (isSuccess) {
-                Log.w(TAG, "            请求成功");
-            } else {
-                Log.w(TAG, "            请求失败");
-            }
-            requestParams = requestParams == null ? "" : requestParams;
-            if (isJsonFormat) {
-                if (!TextUtils.isEmpty(requestParams)) {
-                    Logger.w(TAG, "请求\n\nURL：" + url + "\n返回码：" + statusCode);
-                    Logger.json(TAG, requestParams);
-                } else {
-                    Logger.w(TAG, "请求" + "\n\n无请求参数" + "\nURL：" + url + "\n返回码：" + statusCode);
-                }
-
-                Logger.w(TAG, "返值 ");
-                Logger.json(TAG, responseBody);
-
-            } else {
-                if (!TextUtils.isEmpty(requestParams)) {
-                    Logger.w(TAG, "请求\n\nURL：" + url + "\n返回码：" + statusCode + "\n\n参数" + requestParams);
-                } else {
-                    Logger.w(TAG, "请求\n\nURL：" + url + "\n返回码：" + statusCode);
-                }
-                Logger.d(TAG, "返值\n\n" + responseBody);
-            }
-        } catch (Exception e) {
-            Logger.e(TAG, "         日志错误啦");
-            e.printStackTrace();
-        }
-    }
-
-    public static void printSuccessLog(String TAG, Header[] headers, URI uri, String requestParams, int statusCode, String responseBody) {
-        printSuccessLog(TAG, headers, uri, requestParams, statusCode, responseBody, true);
-    }
-
-    public static void printErrorLog(String TAG, Header[] headers, URI uri, String requestParams, int statusCode, String responseBody) {
-        printSuccessLog(TAG, headers, uri, requestParams, statusCode, responseBody, false);
-    }
+//    public static void printSuccessLog(String TAG, Header[] headers, URI uri, String requestParams, int statusCode, String responseBody) {
+//        printSuccessLog(TAG, headers, uri, requestParams, statusCode, responseBody, true);
+//    }
+//
+//    public static void printErrorLog(String TAG, Header[] headers, URI uri, String requestParams, int statusCode, String responseBody) {
+//        printSuccessLog(TAG, headers, uri, requestParams, statusCode, responseBody, false);
+//    }
 
     /**
      * 获取应用程序版本

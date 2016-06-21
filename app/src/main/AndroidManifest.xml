@@ -48,6 +48,8 @@
         </activity>
         <activity android:name=".test.ChioceCityActivity">
         </activity>
+        <activity android:name=".heartlayout.widget.TestHeartActivity">
+        </activity>
     </application>
 
 </manifest>
