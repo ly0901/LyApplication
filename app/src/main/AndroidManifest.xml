@@ -50,6 +50,8 @@
         </activity>
         <activity android:name=".heartlayout.widget.TestHeartActivity">
         </activity>
+        <activity android:name=".test.ViewpagerActivity">
+        </activity>
     </application>
 
 </manifest>

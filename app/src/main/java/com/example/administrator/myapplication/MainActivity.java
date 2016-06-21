@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.administrator.myapplication.base.BaseActivity;
-import com.example.administrator.myapplication.heartlayout.widget.TestHeartActivity;
+import com.example.administrator.myapplication.test.ViewpagerActivity;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -27,7 +27,7 @@ public class MainActivity extends BaseActivity {
         Map<String, String> params = new HashMap<String, String>();
         params.put("whgcsPhone", userName);
         params.put("password", userPassword);
-        startNewActivity(TestHeartActivity.class);
+        startNewActivity(ViewpagerActivity.class);
     }
 
     private void loadDatas() {
