@@ -25,4 +25,18 @@
         <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
         <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
     </style>
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/tran_in</item>
+        <!-- 当前activity打开时，进入的activity的动画 -->
+        <item name="android:activityOpenExitAnimation">@anim/tran_out</item>
+        <!-- 当前activity打开时，退出的activity的动画 -->
+        <item name="android:activityCloseEnterAnimation">@anim/tran_pre_in</item>
+        <!-- 当前activity关闭时，进入的activity的动画 -->
+        <item name="android:activityCloseExitAnimation">@anim/tran_pre_out</item>
+        <!-- 当前activity关闭时，退出的activity的动画 -->
+    </style>
+    <style name="AppTheme2" >
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
 </resources>

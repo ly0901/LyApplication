@@ -3,7 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/record_yellow"
     tools:context="com.example.administrator.myapplication.test.ViewpagerActivity">
 
     <com.example.administrator.myapplication.rollviewpager.RollPagerView
@@ -12,5 +14,10 @@
         android:layout_height="@dimen/space200"
         app:rollviewpager_play_delay="3000"/>
 
+    <TextView android:id="@+id/tv_bottom"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:text="adsd"/>
 
 </RelativeLayout>

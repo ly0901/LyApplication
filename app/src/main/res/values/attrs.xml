@@ -32,4 +32,12 @@
         <attr name="rollviewpager_hint_color" format="color" />
         <attr name="rollviewpager_hint_alpha" format="integer" />
     </declare-styleable>
+    <declare-styleable name="asia.ivity.android.tiledscrollview.TiledScrollView">
+        <attr name="file_pattern" format="string" />
+        <attr name="tile_width" format="integer" />
+        <attr name="tile_height" format="integer" />
+        <attr name="image_width" format="integer" />
+        <attr name="image_height" format="integer" />
+        <attr name="zoom_buttons" format="boolean" />
+    </declare-styleable>
 </resources>

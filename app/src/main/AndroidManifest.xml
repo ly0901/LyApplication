@@ -50,7 +50,15 @@
         </activity>
         <activity android:name=".heartlayout.widget.TestHeartActivity">
         </activity>
-        <activity android:name=".test.ViewpagerActivity">
+        <activity
+            android:name=".test.ViewpagerActivity"
+            android:theme="@style/AppTheme2">
+        </activity>
+        <activity android:name=".test.ScrollActivity">
+        </activity>
+        <activity android:name=".test.TiledScrollActivity">
+        </activity>
+        <activity android:name=".test.AutomaticRefreshActivity">
         </activity>
     </application>
 

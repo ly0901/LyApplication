@@ -1,12 +1,33 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+              android:orientation="vertical"
                 tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv_hello"
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/tv_choice_city"
+        android:text="选择地址"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-</RelativeLayout>
+    <Button
+        android:id="@+id/tv_bear"
+        android:text="冒小熊动画"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/tv_auto_troll"
+        android:text="自动轮播且上下滑关闭当前页面"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/tv_test"
+        android:text="测试"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/tv_test2"
+        android:text="测试"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
