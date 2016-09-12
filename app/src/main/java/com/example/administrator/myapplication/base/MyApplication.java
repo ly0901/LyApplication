@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.util.DisplayMetrics;
 
+import com.liulishuo.filedownloader.FileDownloader;
 
 
 public class MyApplication extends Application {
@@ -46,7 +47,7 @@ public class MyApplication extends Application {
         //initHawk();
 
         initImageLoader();
-
+        FileDownloader.init(this);
         //LogerUtil.ee(MD5Util.getMD5("123456"));
         //initBugtags();
 

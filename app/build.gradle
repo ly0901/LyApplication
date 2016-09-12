@@ -35,4 +35,5 @@ dependencies {
     compile 'com.github.captain-miao:recyclerviewutils:1.2.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.chanven.lib:cptr:1.0.0'
+    compile 'com.liulishuo.filedownloader:library:1.0.2'
 }
